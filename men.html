@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lit-Thuanian | Men</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+  body { font-family: 'Poppins','Open Sans', sans-serif; }
+  .navbar { background-color: #333; height: 92px; }
+  .navbar a { color: white; padding: 14px 20px; text-decoration: none; text-align: center; display: block; }
+  .navbar a:hover { background-color: #ddd; color: black; }
+  .banner-text { font-size: 1.875rem; line-height: 2.25rem; }
+        .search-bar {
+            border-bottom: 2px solid #D1D5DB;
+            padding-bottom: 8px;
+        }
+        .search-input {
+            border: 2px solid #D1D5DB;
+            padding: 8px 12px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 320px;
+            margin-top: -1rem; /* Adjusts the position to align with the bottom border */
+        }
+        .search-icon {
+            position: absolute;
+            margin-left: -30px;
+            color: #9CA3AF;
+        }
+        .sorting {
+            margin-top: 2rem; /* Spacing from search bar to sorting */
+            text-align: center;
+        }
+        .sorting label {
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+        .sorting select {
+            border: 2px solid #D1D5DB;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #4A5568;
+            margin-right: 0.5rem;
+        }
+        .category-list {
+            border-right: 2px solid #D1D5DB;
+            padding-right: 2rem; /* Adjust the padding as needed */
+        }
+        .category-item {
+            margin-bottom: 1rem; /* Adjust the spacing as needed */
+            font-size: 1.125rem; /* Adjust the font size as needed */
+            font-weight: 600; /* Adjust the font weight as needed */
+        }
+</style>
+</head>
+<body class="bg-gray-100">
+<div class="navbar" style="height: 64px;">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="flex justify-between items-center h-full">
+            <a href="index.html" class="text-3xl font-bold text-gray-700">Lit-Thuanian</a>
+            <nav class="flex space-x-4">
+                <a href="index.html" class="hover:bg-gray-700">Home</a>
+                <a href="new_arrivals.html" class="hover:bg-gray-700">New-Arrivals</a>
+                <a href="men.html" class="hover:bg-gray-700">Men</a>
+                <a href="women.html" class="hover:bg-gray-700">Women</a>
+            </nav>
+        <div class="space-x-4 flex items-center">
+                <a href="#" class="hover:bg-gray-700"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#" class="hover:bg-gray-700"><i class="fas fa-user"></i></a>
+        </div>
+        </header>
+    </div>
+</div>
+
+<div class="py-5">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="relative text-center mt-10">
+            <!-- <div class="inline-block search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="search" placeholder="search" class="search-input">
+            </div> -->
+        </div>
+        <div class="sorting">
+            <label style="font-size: 2rem;">Sorting</label>
+            <select>
+                <option>Size</option>
+            </select>
+            <select>
+                <option>Colour</option>
+            </select>
+            <select>
+                <option>Type</option>
+            </select>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 py-4">
+            <div class="w-full md:w-1/4">
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-lg font-semibold">View All</a></li>
+                    <li><a href="#" class="text-lg font-semibold"">T-Shirts</a></li>
+                    <li><a href="#" class="text-lg font-semibold">Shirts</a></li>
+                    <li><a href="#" class="text-lg font-semibold">Trousers</a></li>
+                    <li><a href="#" class="text-lg font-semibold">Shorts</a></li>
+                    <li><a href="#" class="text-lg font-semibold">Hoodies</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Repeat for each product item -->
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+                <img src="https://placehold.co/300x400" alt="Placeholder image for a clothing item" class="w-full">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-gray-200">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-3 gap-8">
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
+      <nav class="menu space-y-1">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
+      </nav>
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-700">Help</h3>
+      <nav class="menu space-y-1">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Account</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+      </nav>
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-700">Info</h3>
+      <nav class="menu space-y-1">
+        <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Social Media</a>
+      </nav>
+    </div>
+  </div>
+  <div class="text-center py-4 text-gray-600">
+    &copy; 2024 Lit-Thuanian. All rights reserved.
+  </div>  
+</footer>
+</body>
+</html>

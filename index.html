@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lit-Thuanian</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+  body { font-family: 'Poppins','Open Sans', sans-serif; }
+  .navbar { background-color: #333; height: 92px; }
+  .navbar a { color: white; padding: 14px 20px; text-decoration: none; text-align: center; display: block; }
+  .navbar a:hover { background-color: #ddd; color: black; }
+  .banner-text { font-size: 1.875rem; line-height: 2.25rem; }
+  
+</style>
+</head>
+<body class="bg-gray-100">
+<div class="navbar" style="height: 64px;">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="flex justify-between items-center h-full">
+            <a href="index.html" class="text-3xl font-bold text-gray-700">Lit-Thuanian</a>
+            <nav class="flex space-x-4">
+                <a href="index.html" class="hover:bg-gray-700">Home</a>
+                <a href="new_arrivals.html" class="hover:bg-gray-700">New-Arrivals</a>
+                <a href="men.html" class="hover:bg-gray-700">Men</a>
+                <a href="women.html" class="hover:bg-gray-700">Women</a>
+            </nav>
+        <div class="space-x-4 flex items-center">
+                <a href="#" class="hover:bg-gray-700"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#" class="hover:bg-gray-700"><i class="fas fa-user"></i></a>
+        </div>
+        </header>
+    </div>
+</div>
+<div>
+  <div class="text-center relative">
+    <a href="index.html">
+      <img src="Images/main.png" alt="Lit-Thuanian clothing store interior with assorted clothes" class="mb-8 w-full h-auto">
+      <h1 class="text-5xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style="color: white; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Lit-Thuanian.</h1>
+    </a>
+  </div>
+</div>
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="py-8">
+    <div class="flex justify-center">
+        <div class="grid grid-cols-2 gap-4 mb-8 mx-auto ">
+          <a href="men.html" class="relative" >
+            <img src="Images/men.png" alt="Man wearing a black hoodie" class="rounded hover:opacity-95">
+            <div class="absolute bottom-0 left-0 bg-gray-900 text-white px-2 py-1 rounded">Men</div>
+          </a>
+          <a href="women.html" class="relative">
+            <img src="Images/women.png" alt="Woman wearing an oversized t-shirt" class="rounded hover:opacity-95">
+            <div class="absolute bottom-0 left-0 bg-gray-900 text-white px-2 py-1 rounded ">Women</div>
+          </a>
+        </div>
+    </div>
+    <h2 class="text-2xl font-semibold mb-4" style="font-size: 2rem;">Favorites</h2>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
+        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
+        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
+        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
+        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
+        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
+        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-gray-200">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-3 gap-8">
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
+      <nav class="menu space-y-1 flex flex-col">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
+      </nav>
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-700">Help</h3>
+      <nav class="menu space-y-1 flex flex-col">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Account</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+      </nav>
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-700">Info</h3>
+      <nav class="menu space-y-1 flex flex-col">
+        <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Social Media</a>
+      </nav>
+    </div>
+  </div>
+  <div class="text-center py-4 text-gray-600">
+    &copy; 2024 Lit-Thuanian. All rights reserved.
+  </div>  
+</footer>
+</body>
+</html>
