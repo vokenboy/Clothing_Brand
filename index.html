@@ -15,6 +15,18 @@
   .navbar a { color: white; padding: 14px 20px; text-decoration: none; text-align: center; display: block; }
   .navbar a:hover { background-color: #ddd; color: black; }
   .banner-text { font-size: 1.875rem; line-height: 2.25rem; }
+  .banner { 
+      background: url('Images/main.png') no-repeat center center; 
+      background-size: cover; 
+      height: 500px; /* Adjust height as needed */
+  }
+  .banner-text-box { 
+      background-color: rgba(51, 51, 51, 0.5); 
+      position: absolute; 
+      bottom: 10%; 
+      left: 5%; 
+      padding: 2rem; 
+  }
   
 </style>
 </head>
@@ -22,32 +34,40 @@
 <div class="navbar" style="height: 64px;">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <header class="flex justify-between items-center h-full">
+            <div class="mobile-menu-icon absolute right-8 top-5 block sm:hidden">
+                <i class="fas fa-ellipsis-v"></i>
+                <div class="dropdown-menu hidden">
+                  <a href="#" class="text-gray-700">Men</a>
+                  <a href="#" class="text-gray-700">Women</a>
+                  <a href="#" class="text-gray-700">Sales</a>
+                  <a href="#" class="text-gray-700"><i class="fas fa-shopping-bag"></i></a>
+                  <a href="#" class="text-gray-700"><i class="fas fa-user"></i></a>
+              </div>
+            </div>
             <a href="index.html" class="text-3xl font-bold text-gray-700">Lit-Thuanian</a>
-            <nav class="flex space-x-4">
-                <a href="index.html" class="hover:bg-gray-700">Home</a>
-                <a href="new_arrivals.html" class="hover:bg-gray-700">New-Arrivals</a>
-                <a href="men.html" class="hover:bg-gray-700">Men</a>
-                <a href="women.html" class="hover:bg-gray-700">Women</a>
-            </nav>
-        <div class="space-x-4 flex items-center">
-                <a href="#" class="hover:bg-gray-700"><i class="fas fa-shopping-bag"></i></a>
-                <a href="#" class="hover:bg-gray-700"><i class="fas fa-user"></i></a>
-        </div>
+            <nav class="flex space-x-4 hidden sm:flex items-center">
+              <a href="index.html" class="hover:bg-gray-700">Home</a>
+              <a href="new_arrivals.html" class="hover:bg-gray-700">New-Arrivals</a>
+              <a href="men.html" class="hover:bg-gray-700">Men</a>
+              <a href="women.html" class="hover:bg-gray-700">Women</a>
+          </nav>
+          <div class="space-x-4 flex items-center hidden sm:flex">
+              <a href="#" class="hover:bg-gray-700"><i class="fas fa-shopping-bag"></i></a>
+              <a href="#" class="hover:bg-gray-700"><i class="fas fa-user"></i></a>
+          </div>
         </header>
     </div>
 </div>
-<div>
-  <div class="text-center relative">
-    <a href="index.html">
-      <img src="Images/main.png" alt="Lit-Thuanian clothing store interior with assorted clothes" class="mb-8 w-full h-auto">
-      <h1 class="text-5xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style="color: white; font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Lit-Thuanian.</h1>
-    </a>
+<div class="banner w-full relative">
+  <div class="banner-text-box">
+      <h1 class="banner-text text-white font-bold text-4xl">New Collection Is Here</h1>
+      <a href="#" class="mt-4 inline-block bg-white text-black px-6 py-3 text-sm font-semibold rounded hover:bg-gray-200">Find Now</a>
   </div>
 </div>
 <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="py-8">
     <div class="flex justify-center">
-        <div class="grid grid-cols-2 gap-4 mb-8 mx-auto ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mb-8 mx-auto ">
           <a href="men.html" class="relative" >
             <img src="Images/men.png" alt="Man wearing a black hoodie" class="rounded hover:opacity-95">
             <div class="absolute bottom-0 left-0 bg-gray-900 text-white px-2 py-1 rounded">Men</div>
@@ -58,32 +78,55 @@
           </a>
         </div>
     </div>
-    <h2 class="text-2xl font-semibold mb-4" style="font-size: 2rem;">Favorites</h2>
-    <div class="grid grid-cols-3 gap-4">
-      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+    <h2 class="text-2xl font-semibold mb-4 p-4" style="font-size: 2rem;">Men Favorites</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
       </div>
-      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
       </div>
-      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
       </div>
-      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
       </div>
-      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
       </div>
-      <div class="bg-transparent h-400" style="width: 300px; height: 400px;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full h-full object-cover py-1 rounded">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
       </div>
+      <!-- Repeat for other divs... -->
+    </div>
+    <h2 class="text-2xl font-semibold mb-4 p-4" style="font-size: 2rem;">Women Favorites</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
+      </div>
+      <div class="bg-transparent">
+          <img src="https://via.placeholder.com/300x400" alt="Placeholder image" class="w-full max-w-xs sm:max-w-full object-cover py-1 rounded">
+      </div>
+      <!-- Repeat for other divs... -->
     </div>
   </div>
 </div>
 <footer class="bg-gray-200">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-3 gap-8">
-    <div class="space-y-2">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="space-y-2 p-4">
       <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
       <nav class="menu space-y-1 flex flex-col">
         <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
@@ -91,24 +134,28 @@
         <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
       </nav>
     </div>
-    <div class="space-y-2">
-      <h3 class="text-lg font-semibold text-gray-700">Help</h3>
-      <nav class="menu space-y-1 flex flex-col">
-        <a href="#" class="text-gray-600 hover:text-gray-800">Account</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
-      </nav>
-    </div>
-    <div class="space-y-2">
+    <div class="space-y-2 p-4">
       <h3 class="text-lg font-semibold text-gray-700">Info</h3>
       <nav class="menu space-y-1 flex flex-col">
-        <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Social Media</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
       </nav>
     </div>
+    <div class="space-y-2 p-4">
+      <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
+      <nav class="menu space-y-1 flex flex-col">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
+      </nav>
+    </div>
+    <!-- Repeat for other divs... -->
   </div>
   <div class="text-center py-4 text-gray-600">
     &copy; 2024 Lit-Thuanian. All rights reserved.
   </div>  
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
