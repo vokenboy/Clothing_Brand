@@ -60,23 +60,30 @@
 </style>
 </head>
 <body class="bg-gray-100">
-<div class="navbar" style="height: 64px;">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header class="flex justify-between items-center h-full">
-            <a href="index.html" class="text-3xl font-bold text-gray-700">Lit-Thuanian</a>
-            <nav class="flex space-x-4">
-                <a href="index.html" class="hover:bg-gray-700">Home</a>
-                <a href="new_arrivals.html" class="hover:bg-gray-700">New-Arrivals</a>
-                <a href="men.html" class="hover:bg-gray-700">Men</a>
-                <a href="women.html" class="hover:bg-gray-700">Women</a>
-            </nav>
-        <div class="space-x-4 flex items-center">
-                <a href="#" class="hover:bg-gray-700"><i class="fas fa-shopping-bag"></i></a>
-                <a href="#" class="hover:bg-gray-700"><i class="fas fa-user"></i></a>
+    <div class="navbar" style="height: 64px;">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <header class="flex justify-between items-center h-full">
+                <div class="mobile-menu-icon absolute right-8 top-5 block lg:hidden">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <!-- Toggle visibility based on screen size -->
+                    <div class="dropdown-menu hidden lg:block">
+                        <!-- Dropdown links -->
+                    </div>
+                </div>
+                <a href="index.html" class="text-3xl font-bold text-gray-700">Lit-Thuanian.</a>
+                <nav class="flex space-x-4 hidden md:hidden lg:flex items-center">
+                  <a href="index.html" class="hover:bg-gray-700">Home</a>
+                  <a href="new_arrivals.html" class="hover:bg-gray-700">New-Arrivals</a>
+                  <a href="men.html" class="hover:bg-gray-700">Men</a>
+                  <a href="women.html" class="hover:bg-gray-700">Women</a>
+                </nav>
+                <div class="space-x-4 flex items-center hidden md:hidden lg:flex">
+                  <a href="#" class="hover:bg-gray-700"><i class="fas fa-shopping-bag"></i></a>
+                  <a href="#" class="hover:bg-gray-700"><i class="fas fa-user"></i></a>
+                </div>
+            </header>
         </div>
-        </header>
     </div>
-</div>
 
 <div class="py-5">
     <div class="max-w-6xl mx-auto px-4">
@@ -100,10 +107,10 @@
         </div>
 
         <div class="flex flex-col md:flex-row gap-4 py-4">
-            <div class="w-full md:w-1/4">
+            <div class="w-full md:w-1/4 hidden md:block">
                 <ul class="space-y-3">
                     <li><a href="#" class="text-lg font-semibold">View All</a></li>
-                    <li><a href="#" class="text-lg font-semibold"">T-Shirts</a></li>
+                    <li><a href="#" class="text-lg font-semibold">T-Shirts</a></li>
                     <li><a href="#" class="text-lg font-semibold">Shirts</a></li>
                     <li><a href="#" class="text-lg font-semibold">Trousers</a></li>
                     <li><a href="#" class="text-lg font-semibold">Shorts</a></li>
@@ -127,33 +134,36 @@
 </div>
 
 <footer class="bg-gray-200">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-3 gap-8">
-    <div class="space-y-2">
-      <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
-      <nav class="menu space-y-1">
-        <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
-      </nav>
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="space-y-2 p-4">
+        <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
+        <nav class="menu space-y-1 flex flex-col">
+          <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
+        </nav>
+      </div>
+      <div class="space-y-2 p-4">
+        <h3 class="text-lg font-semibold text-gray-700">Info</h3>
+        <nav class="menu space-y-1 flex flex-col">
+          <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
+        </nav>
+      </div>
+      <div class="space-y-2 p-4">
+        <h3 class="text-lg font-semibold text-gray-700">Shop</h3>
+        <nav class="menu space-y-1 flex flex-col">
+          <a href="#" class="text-gray-600 hover:text-gray-800">Women</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Men</a>
+          <a href="#" class="text-gray-600 hover:text-gray-800">Sales</a>
+        </nav>
+      </div>
+      <!-- Repeat for other divs... -->
     </div>
-    <div class="space-y-2">
-      <h3 class="text-lg font-semibold text-gray-700">Help</h3>
-      <nav class="menu space-y-1">
-        <a href="#" class="text-gray-600 hover:text-gray-800">Account</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
-      </nav>
-    </div>
-    <div class="space-y-2">
-      <h3 class="text-lg font-semibold text-gray-700">Info</h3>
-      <nav class="menu space-y-1">
-        <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
-        <a href="#" class="text-gray-600 hover:text-gray-800">Social Media</a>
-      </nav>
-    </div>
-  </div>
-  <div class="text-center py-4 text-gray-600">
-    &copy; 2024 Lit-Thuanian. All rights reserved.
-  </div>  
-</footer>
+    <div class="text-center py-4 text-gray-600">
+      &copy; 2024 Lit-Thuanian. All rights reserved.
+    </div>  
+  </footer>
 </body>
 </html>
